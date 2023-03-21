@@ -1,1 +1,2 @@
-<h1>card</h1>
+<p><?= $student['fname'] ?></p>
+<a href="delete.php">delete</a>

@@ -61,3 +61,21 @@ function get($table)
     }
     return $item;
 }
+function delete()
+{
+    global $pdo;
+    $id = getId();
+  //on fai la requette 
+    $sql = "DELETE FROM student where id= :id";
+      //prepare la requete
+    $query = $pdo->prepare($sql);
+    //on asocie la requette a un parametre
+    $query->bindValue(':id', $id, PDO::PARAM_INT);
+    //exedcute la requette
+    $query->execute();
+
+    $_SESSION['success'] = "element suprimer avec succées!";
+    
+    header('location:index.php');
+
+}
