@@ -18,7 +18,7 @@
                     <th><?= $student['fname'] ?></th>
                     <th><?= $student['lname'] ?></th>
                     <th><?= $student['formation']  ?></th>
-                    <th><a href="show-etudiant.php?id=<?= $student['id'] ?>"><i class="fa-solid fa-eye"></i></a></th>
+                    <th><a href="show-etudiant.php?id=<?= $student['id'] ?>" ><i class="fa-solid fa-eye "></i></a></th>
                     <th><i class="fa-solid fa-pencil"></i></th>
                 </tr>
 

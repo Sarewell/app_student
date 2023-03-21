@@ -5,10 +5,14 @@ $title_page = "profil de l'etudiant";
 // verification de l'id
 require_once('models/Model.php');
 
+$student = get('student');
 
-$student=get('student');
+// debug_array($student);
+// capture
+ob_start();
+include('views\partials\studentPage.php\_show-student.php');
 
-
-debug_array($student);
+$content = ob_get_clean();
+require('views\layout.php');
 
          
