@@ -19,7 +19,7 @@ try {
         //voir les erreurs
         PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING
     ));
-  return $pdo;
+return $pdo;
 } catch(PDOException $e){
     echo "Erreur de Connection : ".$e->getMessage();
 }

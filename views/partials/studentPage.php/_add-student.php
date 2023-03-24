@@ -81,29 +81,29 @@ else{
 }
 ?>
 
-<form action="" method="POST">
-    <div ><input type="text" placeholder="premnom" class="input w-full max-w-xs" id="fname" name="fname"/>
+<form action="" method="POST" class="shadow-lg bg-gray-200 m-auto p-6 rounded-xl">
+    <div class="mt-4" ><input type="text" placeholder="premnom" class="input w-full max-w-xs" id="fname" name="fname"/>
     </div>
             <?php
                 if (isset($error['fname'])) {
-                 echo $error['fname'];
+                echo $error['fname'];
                 }
             ?>
-    <div><input  type="text" placeholder="nom" class="input w-full max-w-xs" class= "flex" id="lname" name="lname"/>
+    <div class="mt-4"><input  type="text" placeholder="nom" class="input w-full max-w-xs" class= "flex mt-4" id="lname" name="lname"/>
     </div>
-     <?php
+    <?php
         if (isset($error['lname'])) {
-         echo $error['lname'];
+        echo $error['lname'];
         }
-     ?>
-    <div><input  type="number" placeholder="age" class="input w-full max-w-xs" class= "flex" id="age" name="age"/>
+    ?>
+    <div class="mt-4"><input  type="number" placeholder="age" class="input w-full max-w-xs" class= "flex mt-4" id="age" name="age"/>
     </div>
     <?php
         if (isset($error['age'])) {
-         echo $error['age'];
+        echo $error['age'];
         }
-     ?>
-    <div>
+    ?>
+    <div class="mt-4">
         <select class="select w-full max-w-xs" id="formation" name="formation">
             <?php 
             $formationOption =[
@@ -115,7 +115,7 @@ else{
             ]
             ?>
             <div>
-                <option disabled selected>formation</option>
+                <option disabled selected  class= "flex mt-4">formation</option>
                 <?php foreach($formationOption as $item): ?>
                 <option value="<?= $item['name'] ?>"><?= $item['name'] ?></option>
                 
@@ -124,24 +124,24 @@ else{
             <?php endforeach ?>
         </select>
     </div>
-     <?php
+    <?php
         if (isset($error['formation'])) {
-         echo $error['formation'];
+        echo $error['formation'];
         }
-     ?>
-    <div>
-    <input type="email" placeholder="email" class="input w-full max-w-xs" class= "flex" id="Email" name="Email"/>
+    ?>
+    <div class="mt-4">
+    <input type="email" placeholder="email" class="input w-full max-w-xs" class= "flex " id="Email" name="Email"/>
     </div>
-     <?php
+    <?php
         if (isset($error['Email'])) {
-         echo $error['Email'];
+        echo $error['Email'];
         }
-     ?>
+    ?>
     
     
 
     
     
     <!-- <input type="file" class="file-input w-full max-w-xs" class= "flex"/> -->
-    <input class="btn bg-blue-600 text-white mt-6" type="submit" id="submited" name="submited" value="Envoyer" />
+    <input class="btn glass mt-6 bg-green-500 hover:text-green-500" type="submit" id="submited" name="submited" value="Envoyer" />
 </form>

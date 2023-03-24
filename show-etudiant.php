@@ -12,5 +12,3 @@ include('views/partials/studentPage.php/_show-student.php');
 
 $content = ob_get_clean();
 require('views/layout.php');
-
-         

@@ -1,7 +1,7 @@
 <?php
     session_start();
 
-   require_once('models/Model.php')
+require_once('models/Model.php')
 
 ?>
 <html lang="fr">
@@ -22,9 +22,9 @@
 		/>
     <title>happy school</title>
 </head>
-<body>
+<body class="bg-gray-300">
     <?php
- 
+
     include_once('helpers/_function.php');
 
     $navItems = 
@@ -39,7 +39,7 @@
         ]
     ];
     ?>
-    		<!-- header -->
+    <!-- header -->
 		<header class="px-[10%] max-w-full bg-white px-5 py-20 flex place-content-between items-center shadow-xl">
 			<!-- div logo -->
 			<div class="">
@@ -59,7 +59,7 @@
 			<!-- end navigation -->
 		</header>
         <div>
-            <h1  class="rounded-b-xl mx-96 bg-gray-100 text-4xl text-center py-16 text-bold uppercase text-gray-500 shadow-lg"><?= $title_page ?></h1>
+            <h1  class="rounded-b-xl mx-96 bg-gray-100 text-4xl text-center py-16 text-bold uppercase text-gray-500 shadow-lg border-t-2 borde-gray-500"><?= $title_page ?></h1>
         </div>
         
 		<!-- end header -->
@@ -68,22 +68,21 @@
 <?= $content ?>
 
         </main>
-<footer class="bg-cyan-600 p-20 text-white">
+<footer class="bg-gray-200 p-20 text-gray-600 shadow-lg border-t-2 borde-gray-500">
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias amet vel nisi earum recusandae mollitia quo omnis dolores tenetur ut excepturi voluptas non, ipsa cumque iure quos itaque eius vitae.</p>
     <div class="pt-8 space-x-20 text-4xl text-center">
 				<a href="https://www.facebook.com/" target="_blank">
-					<i class="fa-brands fa-facebook px-1.5 text-amber-400 hover:text-amber-300"></i>
+					<i class="fa-brands fa-facebook px-1.5 text-red-700 hover:text-red-800 shadow-lg rounded-full"></i>
 				</a>
 				<a href="https://www.instagram.com/" target="_blank">
-					<i class="fa-brands fa-instagram px-1.5 text-amber-400 hover:text-amber-200"></i>
+					<i class="fa-brands fa-instagram px-1.5 text-red-700 hover:text-red-800 shadow-lg rounded-full"></i>
 				</a>
 				<a href="https://www.youtube.com/" target="_blank">
-					<i class="fa-brands fa-youtube px-1.5 text-amber-400 hover:text-amber-200"></i>
+					<i class="fa-brands fa-youtube px-1.5 text-red-700 hover:text-red-800 shadow-lg rounded-full"></i>
 				</a>
 			</div>
 </footer>
 </body>
 </html>
 
-        
 

@@ -61,11 +61,11 @@ function get($table)
     }
     return $item;
 }
-function delete()
+function delete($table)
 {
     global $pdo;
     $id = getId();
-  //on fai la requette 
+    //on fai la requette 
     $sql = "DELETE FROM student where id= :id";
       //prepare la requete
     $query = $pdo->prepare($sql);

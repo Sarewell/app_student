@@ -44,10 +44,8 @@ if (!empty($_POST['submited'])) {
     // verifie que l'age est un nombre entier
     if (!is_numeric($age)) {
       $error['age'] = "<span class='text-red-500'>Merci de rentrer un age correct</span>";
-      // verifie qu'il est majeur
-    } elseif ($age < 18) {
-      $error['age'] = "<span class='text-red-500'>Tu es mineur</span>";
-    }
+      }
+
   } else {
     $error['age'] = $errMsgRequire;
   }
